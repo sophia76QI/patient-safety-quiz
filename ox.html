@@ -26,10 +26,10 @@
 
   /* ---------- top bar ---------- */
   .topbar{display:flex; align-items:center; justify-content:space-between; gap:10px; min-height:34px}
-  .eyebrow{font-size:12px; letter-spacing:.14em; color:var(--green-deep); text-transform:uppercase}
+  .eyebrow{font-size:13.5px; letter-spacing:.14em; color:var(--green-deep); text-transform:uppercase}
   .soundbtn{
     border:1px solid var(--line); background:var(--surface); color:var(--ink);
-    border-radius:999px; padding:6px 12px; font-size:13px; cursor:pointer;
+    border-radius:999px; padding:8px 14px; font-size:15px; cursor:pointer;
     font-family:inherit;
   }
   .soundbtn:focus-visible, button:focus-visible{outline:3px solid rgba(62,138,104,.5); outline-offset:2px}
@@ -55,11 +55,11 @@
   }
   .heroWrap{position:relative}
   @keyframes breath{0%,100%{transform:scale(.96); opacity:.5} 50%{transform:scale(1.06); opacity:1}}
-  .hero h1{font-size:30px; line-height:1.25; color:var(--green-deep)}
+  .hero h1{font-size:33px; line-height:1.25; color:var(--green-deep)}
   .hero .date{font-size:13px; color:var(--sub); letter-spacing:.08em}
-  .hero p.lead{font-size:15.5px; line-height:1.7; max-width:32ch}
+  .hero p.lead{font-size:18px; line-height:1.7; max-width:32ch}
   .namechips{display:flex; gap:8px}
-  .chip{font-size:13px; padding:5px 12px; border-radius:999px}
+  .chip{font-size:15px; padding:6px 14px; border-radius:999px}
   .chip.b{background:var(--blue-soft); color:#275A88}
   .chip.p{background:var(--pink-soft); color:#A03D66}
 
@@ -67,19 +67,19 @@
     width:100%; background:var(--surface); border-radius:20px; box-shadow:var(--shadow);
     padding:18px 20px; display:flex; flex-direction:column; gap:12px; margin-top:22px;
   }
-  .rule{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; line-height:1.55}
+  .rule{display:flex; gap:12px; align-items:flex-start; font-size:17px; line-height:1.6}
   .rule .ico{
     flex:0 0 34px; height:34px; border-radius:12px; background:var(--mist);
     display:grid; place-items:center; font-size:17px;
   }
   .together{
     margin-top:14px; background:var(--mist); border-radius:16px; padding:14px 16px;
-    font-size:13.5px; line-height:1.7; color:var(--green-deep); text-align:center;
+    font-size:16px; line-height:1.8; color:var(--green-deep); text-align:center;
   }
   button.big{
     margin-top:20px; width:100%; border:none; cursor:pointer;
-    background:var(--green); color:#fff; font-size:20px; letter-spacing:.02em;
-    padding:16px; border-radius:18px; box-shadow:0 8px 20px rgba(62,138,104,.35);
+    background:var(--green); color:#fff; font-size:23px; letter-spacing:.02em;
+    padding:19px; border-radius:18px; box-shadow:0 8px 20px rgba(62,138,104,.35);
     transition:transform .12s ease, background .12s ease;
   }
   button.big:active{transform:scale(.97)}
@@ -92,7 +92,7 @@
   .dot{width:13px; height:13px; border-radius:50%; background:var(--line); transition:all .25s}
   .dot.now{background:var(--green); transform:scale(1.25)}
   .dot.done{background:var(--gold)}
-  .tickets{font-size:14px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:5px 12px; color:var(--green-deep)}
+  .tickets{font-size:16px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:5px 12px; color:var(--green-deep)}
 
   .speaker{display:flex; align-items:flex-end; gap:12px; margin-top:22px}
   .speaker .mini{
@@ -100,7 +100,7 @@
     border:3px solid var(--surface); box-shadow:var(--shadow); background:#fff;
   }
   .mini img{width:100%; height:100%; display:block}
-  .nametag{font-size:13px; padding:4px 12px; border-radius:999px; margin-bottom:6px; display:inline-block}
+  .nametag{font-size:15px; padding:4px 12px; border-radius:999px; margin-bottom:6px; display:inline-block}
   .nametag.b{background:var(--blue-soft); color:#275A88}
   .nametag.p{background:var(--pink-soft); color:#A03D66}
 
@@ -108,8 +108,8 @@
     position:relative; background:var(--surface); border-radius:20px; border-top-left-radius:6px;
     box-shadow:var(--shadow); padding:22px 20px; margin-top:10px;
   }
-  .qnum{font-size:12.5px; letter-spacing:.12em; color:var(--sub); margin-bottom:8px}
-  .qtext{font-size:18.5px; line-height:1.65; min-height:4.9em}
+  .qnum{font-size:14px; letter-spacing:.12em; color:var(--sub); margin-bottom:8px}
+  .qtext{font-size:22px; line-height:1.62; min-height:4.9em}
 
   .oxrow{display:flex; gap:14px; margin-top:22px}
   .oxbtn{
@@ -119,11 +119,11 @@
     color:#fff;
   }
   .oxbtn:active{transform:scale(.96)}
-  .oxbtn .mark{font-size:46px; line-height:1}
-  .oxbtn .cap{font-size:14px; opacity:.92; font-family:'Gowun Dodum',sans-serif}
+  .oxbtn .mark{font-size:58px; line-height:1}
+  .oxbtn .cap{font-size:17.5px; opacity:.92; font-family:'Gowun Dodum',sans-serif}
   .oxbtn.o{background:var(--green); box-shadow:0 8px 18px rgba(62,138,104,.32)}
   .oxbtn.x{background:var(--coral); box-shadow:0 8px 18px rgba(217,100,90,.32)}
-  .calm{margin-top:18px; text-align:center; font-size:13px; color:var(--sub)}
+  .calm{margin-top:18px; text-align:center; font-size:15px; color:var(--sub)}
 
   /* ---------- feedback panel ---------- */
   .panelveil{
@@ -137,15 +137,15 @@
     max-height:82dvh; overflow-y:auto;
   }
   @keyframes pop{from{transform:translateY(40px) scale(.94); opacity:0} to{transform:none; opacity:1}}
-  .panel .bigmark{font-size:52px; line-height:1.1}
-  .panel h2{font-size:24px; margin-top:6px}
+  .panel .bigmark{font-size:58px; line-height:1.1}
+  .panel h2{font-size:26px; margin-top:6px}
   .panel h2.ok{color:var(--green-deep)} .panel h2.no{color:#B05A52}
   .panel .exp{
     margin-top:14px; background:var(--mist); border-radius:14px; padding:14px 15px;
-    font-size:14.5px; line-height:1.7; text-align:left;
+    font-size:17.5px; line-height:1.8; text-align:left;
   }
   .panel .exp b{color:var(--green-deep)}
-  .panel .soft{margin-top:12px; font-size:14px; color:var(--sub); line-height:1.6}
+  .panel .soft{margin-top:12px; font-size:17px; color:var(--sub); line-height:1.6}
   .panel button.big{margin-top:18px}
 
   /* ---------- win / parade ---------- */
@@ -157,7 +157,7 @@
   .crownmsg{text-align:center; color:#fff; animation:pop .5s ease both}
   .crownmsg .cr{font-size:84px; display:block; animation:crowndrop 1s cubic-bezier(.3,1.5,.5,1) both}
   @keyframes crowndrop{from{transform:translateY(-120px) rotate(-14deg); opacity:0} to{transform:none; opacity:1}}
-  .crownmsg h2{font-family:'Jua'; font-size:30px; margin-top:8px}
+  .crownmsg h2{font-family:'Jua'; font-size:32px; margin-top:8px}
 
   .paradeCard{border-radius:24px; overflow:hidden; box-shadow:var(--shadow); margin-top:16px; background:#fff}
   .scene{
@@ -173,7 +173,7 @@
   .banner{
     position:absolute; top:14px; left:50%; transform:translateX(-50%);
     background:rgba(255,255,255,.92); border-radius:999px; padding:7px 16px;
-    font-family:'Jua'; font-size:15px; color:var(--green-deep); white-space:nowrap;
+    font-family:'Jua'; font-size:16.5px; color:var(--green-deep); white-space:nowrap;
     box-shadow:0 4px 12px rgba(44,107,78,.18);
   }
   .marcher{
@@ -214,30 +214,30 @@
   .gift{
     background:var(--surface); padding:24px 20px 26px; text-align:center;
   }
-  .gift h2{font-size:24px; color:var(--green-deep)}
+  .gift h2{font-size:26px; color:var(--green-deep)}
   .gift .coupon{
     margin-top:16px; border:2px dashed var(--gold); border-radius:18px; padding:18px 16px;
     background:#FFFBF2;
   }
   .coupon .g{font-size:40px}
-  .coupon h3{font-size:19px; color:#6E4C0E; margin-top:4px}
-  .coupon p{font-size:14px; line-height:1.65; margin-top:8px}
-  .coupon .stamp{margin-top:10px; font-size:12.5px; color:var(--sub); letter-spacing:.04em}
+  .coupon h3{font-size:21px; color:#6E4C0E; margin-top:4px}
+  .coupon p{font-size:17px; line-height:1.65; margin-top:8px}
+  .coupon .stamp{margin-top:10px; font-size:14px; color:var(--sub); letter-spacing:.04em}
   .gift .together{text-align:center}
 
   /* ---------- fail ---------- */
   .failwrap{text-align:center; margin-top:40px; display:flex; flex-direction:column; align-items:center; gap:14px}
   .failwrap .pf2{width:120px; height:120px; border-radius:50%; overflow:hidden; border:4px solid #fff; box-shadow:var(--shadow)}
   .pf2 img{width:100%; height:100%; display:block}
-  .failwrap h2{font-size:24px; color:var(--green-deep)}
-  .failwrap p{font-size:15px; line-height:1.75; max-width:30ch}
+  .failwrap h2{font-size:26px; color:var(--green-deep)}
+  .failwrap p{font-size:17.5px; line-height:1.75; max-width:30ch}
 
   #confetti{position:fixed; inset:0; pointer-events:none; z-index:80}
 
   @media (max-width:380px){
-    .hero h1{font-size:26px}
-    .qtext{font-size:17px}
-    .oxbtn .mark{font-size:40px}
+    .hero h1{font-size:29px}
+    .qtext{font-size:20px}
+    .oxbtn .mark{font-size:50px}
   }
   @media (prefers-reduced-motion:reduce){
     .breathring,.marcher,.bob,.wave,.crown2,.crowd span{animation:none !important}

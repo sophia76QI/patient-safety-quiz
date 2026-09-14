@@ -32,13 +32,13 @@
     padding:12px 16px; pointer-events:none;
   }
   .hud > *{pointer-events:auto}
-  .eyebrow{font-size:11.5px; letter-spacing:.14em; color:var(--green-deep);
+  .eyebrow{font-size:14px; letter-spacing:.14em; color:var(--green-deep);
     background:rgba(255,255,255,.85); border-radius:999px; padding:6px 12px}
   .hudright{display:flex; gap:8px; align-items:center}
-  .tickets{font-size:13px; background:rgba(255,255,255,.9); border:1px solid var(--line);
+  .tickets{font-size:16px; background:rgba(255,255,255,.9); border:1px solid var(--line);
     border-radius:999px; padding:5px 11px; color:var(--green-deep); display:none}
   .soundbtn{border:1px solid var(--line); background:rgba(255,255,255,.9); color:var(--ink);
-    border-radius:999px; padding:6px 11px; font-size:13px; cursor:pointer; font-family:inherit}
+    border-radius:999px; padding:8px 14px; font-size:16px; cursor:pointer; font-family:inherit}
   button:focus-visible{outline:3px solid rgba(62,138,104,.55); outline-offset:2px}
   .dots{position:fixed; top:52px; left:50%; transform:translateX(-50%); z-index:30;
     display:none; gap:7px; background:rgba(255,255,255,.85); padding:7px 12px; border-radius:999px}
@@ -54,17 +54,17 @@
     animation:rise .5s ease both;
   }
   @keyframes rise{from{opacity:0; transform:translate(-50%,30px)} to{opacity:1; transform:translate(-50%,0)}}
-  .startcard h1{font-size:24px; color:var(--green-deep); line-height:1.3; text-wrap:balance}
-  .startcard p{font-size:14px; line-height:1.7; margin-top:8px}
+  .startcard h1{font-size:29px; color:var(--green-deep); line-height:1.3; text-wrap:balance}
+  .startcard p{font-size:17.5px; line-height:1.7; margin-top:8px}
   .namechips{display:flex; gap:8px; justify-content:center; margin-top:10px}
-  .chip{font-size:12.5px; padding:4px 11px; border-radius:999px}
+  .chip{font-size:15.5px; padding:4px 11px; border-radius:999px}
   .chip.b{background:var(--blue-soft); color:#275A88}
   .chip.p{background:var(--pink-soft); color:#A03D66}
-  .together{margin-top:12px; background:var(--mist); border-radius:14px; padding:11px 13px;
-    font-size:12.5px; line-height:1.65; color:var(--green-deep)}
+  .together{margin-top:12px; background:var(--mist); border-radius:14px; padding:12px 14px;
+    font-size:16px; line-height:1.75; color:var(--green-deep)}
   button.big{
     margin-top:14px; width:100%; border:none; cursor:pointer;
-    background:var(--green); color:#fff; font-size:19px; padding:15px; border-radius:16px;
+    background:var(--green); color:#fff; font-size:24px; padding:19px; border-radius:16px;
     box-shadow:0 8px 20px rgba(62,138,104,.35); transition:transform .12s;
   }
   button.big:active{transform:scale(.97)}
@@ -78,21 +78,21 @@
     transition:transform .45s cubic-bezier(.2,1.1,.3,1);
   }
   .sheet.on{transform:translate(-50%,0)}
-  .sheetin{background:rgba(255,255,255,.97); border-radius:24px; box-shadow:var(--shadow); padding:18px 18px 16px}
-  .nametag{font-size:12.5px; padding:4px 12px; border-radius:999px; display:inline-block}
+  .sheetin{background:rgba(255,255,255,.97); border-radius:24px; box-shadow:var(--shadow); padding:18px 18px 16px; max-height:74dvh; overflow-y:auto}
+  .nametag{font-size:16px; padding:4px 12px; border-radius:999px; display:inline-block}
   .nametag.b{background:var(--blue-soft); color:#275A88}
   .nametag.p{background:var(--pink-soft); color:#A03D66}
-  .qnum{font-size:11.5px; letter-spacing:.12em; color:var(--sub); float:right; margin-top:5px}
-  .qtext{font-size:16.5px; line-height:1.6; margin-top:10px; min-height:4.8em}
+  .qnum{font-size:14.5px; letter-spacing:.12em; color:var(--sub); float:right; margin-top:5px}
+  .qtext{font-size:22px; line-height:1.62; margin-top:10px; min-height:4.8em}
   .oxrow{display:flex; gap:12px; margin-top:12px}
   .oxbtn{
-    flex:1; border:none; cursor:pointer; border-radius:18px; padding:14px 10px 12px;
+    flex:1; border:none; cursor:pointer; border-radius:20px; padding:18px 10px 14px;
     display:flex; flex-direction:column; align-items:center; gap:2px;
     font-family:'Jua',sans-serif; color:#fff; transition:transform .12s;
   }
   .oxbtn:active{transform:scale(.96)}
-  .oxbtn .mark{font-size:36px; line-height:1.1}
-  .oxbtn .cap{font-size:13px; opacity:.92; font-family:'Gowun Dodum',sans-serif}
+  .oxbtn .mark{font-size:56px; line-height:1.1}
+  .oxbtn .cap{font-size:17.5px; opacity:.92; font-family:'Gowun Dodum',sans-serif}
   .oxbtn.o{background:var(--green); box-shadow:0 6px 16px rgba(62,138,104,.32)}
   .oxbtn.x{background:var(--coral); box-shadow:0 6px 16px rgba(217,100,90,.32)}
 
@@ -103,20 +103,20 @@
   .panel{width:100%; max-width:440px; background:#fff; border-radius:22px; padding:24px 20px;
     text-align:center; animation:pop .35s cubic-bezier(.2,1.4,.4,1) both; max-height:80dvh; overflow-y:auto}
   @keyframes pop{from{transform:translateY(40px) scale(.94); opacity:0} to{transform:none; opacity:1}}
-  .panel .bigmark{font-size:46px; line-height:1.1}
-  .panel h2{font-size:22px; margin-top:6px}
+  .panel .bigmark{font-size:56px; line-height:1.1}
+  .panel h2{font-size:26px; margin-top:6px}
   .panel h2.ok{color:var(--green-deep)} .panel h2.no{color:#B05A52}
   .panel .exp{margin-top:12px; background:var(--mist); border-radius:14px; padding:13px 14px;
-    font-size:14px; line-height:1.7; text-align:left}
+    font-size:17.5px; line-height:1.8; text-align:left}
   .panel .exp b{color:var(--green-deep)}
-  .panel .soft{margin-top:10px; font-size:13.5px; color:var(--sub); line-height:1.6}
+  .panel .soft{margin-top:10px; font-size:17px; color:var(--sub); line-height:1.6}
   .panel button.big{margin-top:14px}
 
   /* ---- win banner + gift ---- */
   .winbanner{
     position:fixed; top:64px; left:50%; transform:translateX(-50%) scale(0); z-index:35;
     background:rgba(255,255,255,.94); border-radius:999px; padding:10px 20px;
-    font-family:'Jua'; font-size:16px; color:var(--green-deep); white-space:nowrap;
+    font-family:'Jua'; font-size:19px; color:var(--green-deep); white-space:nowrap;
     box-shadow:var(--shadow); transition:transform .5s cubic-bezier(.2,1.4,.4,1);
   }
   .winbanner.on{transform:translateX(-50%) scale(1)}
@@ -128,17 +128,17 @@
   .giftsheet.on{transform:translate(-50%,0)}
   .giftin{background:rgba(255,255,255,.97); border-radius:24px; box-shadow:var(--shadow);
     padding:20px 18px; text-align:center; max-height:62dvh; overflow-y:auto}
-  .giftin h2{font-size:21px; color:var(--green-deep)}
+  .giftin h2{font-size:25px; color:var(--green-deep)}
   .coupon{margin-top:12px; border:2px dashed var(--gold); border-radius:16px; padding:14px; background:#FFFBF2}
   .coupon .g{font-size:34px}
-  .coupon h3{font-size:17px; color:#6E4C0E; margin-top:2px}
-  .coupon p{font-size:13.5px; line-height:1.6; margin-top:6px}
-  .coupon .stamp{margin-top:8px; font-size:12px; color:var(--sub)}
+  .coupon h3{font-size:21px; color:#6E4C0E; margin-top:2px}
+  .coupon p{font-size:17px; line-height:1.6; margin-top:6px}
+  .coupon .stamp{margin-top:8px; font-size:14.5px; color:var(--sub)}
   .giftrow{display:flex; gap:10px}
-  .giftrow button.big{font-size:15px; padding:12px}
+  .giftrow button.big{font-size:17px; padding:12px}
 
   .loadmsg{position:fixed; inset:0; display:grid; place-items:center; z-index:90;
-    background:#C9E2D6; font-family:'Jua'; color:var(--green-deep); font-size:18px}
+    background:#C9E2D6; font-family:'Jua'; color:var(--green-deep); font-size:20px}
 </style>
 
 <canvas id="gl"></canvas>
@@ -292,7 +292,7 @@ function resize(){
   renderer.setSize(innerWidth,innerHeight);
   camera.aspect=innerWidth/innerHeight;
   /* 모바일 세로 화면: 화각을 넓혀 장면이 잘리지 않게 */
-  camera.fov=camera.aspect<0.7?68:camera.aspect<1?58:50;
+  camera.fov=camera.aspect<0.7?46:camera.aspect<1?50:50;
   camera.updateProjectionMatrix();
 }
 addEventListener('resize',resize);resize();
@@ -313,12 +313,18 @@ walkway.position.set(-7,0.05,6.5);walkway.rotation.y=0.5;scene.add(walkway);
 
 /* 텍스트 캔버스 텍스처 */
 function textPlane(txt,w,h,fs,bg,fg,parent){
-  const c=document.createElement('canvas');c.width=512;c.height=Math.round(512*h/w);
+  const W=1024;
+  const c=document.createElement('canvas');c.width=W;c.height=Math.round(W*h/w);
   const g=c.getContext('2d');
   g.fillStyle=bg;g.fillRect(0,0,c.width,c.height);
-  g.fillStyle=fg;g.font=fs+"px 'Jua','Malgun Gothic',sans-serif";
-  g.textAlign='center';g.textBaseline='middle';g.fillText(txt,c.width/2,c.height/2+4);
-  const tx=new THREE.CanvasTexture(c);
+  g.fillStyle=fg;
+  let size=Math.round(fs*W/512);
+  const fam="px 'Jua','Malgun Gothic',sans-serif";
+  g.font=size+fam;
+  const maxW=c.width*0.92, maxH=c.height*0.86;
+  while((g.measureText(txt).width>maxW||size>maxH)&&size>12){size-=2;g.font=size+fam;}
+  g.textAlign='center';g.textBaseline='middle';g.fillText(txt,c.width/2,c.height/2+size*0.04);
+  const tx=new THREE.CanvasTexture(c);tx.anisotropy=4;
   const p=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({map:tx}));
   (parent||scene).add(p);return p;}
 
@@ -331,7 +337,7 @@ box(6,7.4,1.2,0xCFE6D9,0,3.7,-7.55,hosp);                 // tower
 const crossG=new THREE.Group();hosp.add(crossG);
 box(1.5,0.42,0.2,0xD9645A,0,6.4,-6.9,crossG);
 box(0.42,1.5,0.2,0xD9645A,0,6.4,-6.9,crossG);
-const sign=textPlane('우리병원',3.6,0.95,150,'#FFFFFF','#2C6B4E',hosp);
+const sign=textPlane('우리병원',3.8,1.0,170,'#FFFFFF','#2C6B4E',hosp);
 sign.position.set(0,5.1,-6.93);
 for(const sx of [-6.5,-4,4,6.5]){
   const win=box(1.5,1.2,0.1,0xA9CDE8,sx,3.4,-6.95,hosp);
@@ -342,7 +348,7 @@ const gate=new THREE.Group();gate.position.set(-8,0,4.5);gate.rotation.y=0.5;sce
 box(0.3,2.6,0.3,0x3E8A68,-1.3,1.3,0,gate);
 box(0.3,2.6,0.3,0x3E8A68,1.3,1.3,0,gate);
 box(3.2,0.5,0.4,0x3E8A68,0,2.8,0,gate);
-const gateSign=textPlane('어서오세요',2.6,0.44,120,'#3E8A68','#FFFFFF',gate);
+const gateSign=textPlane('어서오세요',2.7,0.5,130,'#3E8A68','#FFFFFF',gate);
 gateSign.position.set(0,2.8,0.22);
 
 /* 퀴즈 책상 + 의자 */
@@ -352,7 +358,7 @@ box(0.16,1.0,0.16,0xB4854F,-1.1,0.5,-0.45,deskG);
 box(0.16,1.0,0.16,0xB4854F,1.1,0.5,-0.45,deskG);
 box(0.16,1.0,0.16,0xB4854F,-1.1,0.5,0.45,deskG);
 box(0.16,1.0,0.16,0xB4854F,1.1,0.5,0.45,deskG);
-const deskSign=textPlane('환자안전 OX 퀴즈',2.4,0.5,96,'#E9A62E','#4A3308',deskG);
+const deskSign=textPlane('환자안전 OX 퀴즈',2.5,0.52,110,'#E9A62E','#4A3308',deskG);
 deskSign.position.set(0,0.75,0.62);
 const chair=new THREE.Group();chair.position.set(2,0,0.6);scene.add(chair);
 box(0.9,0.14,0.9,0x3E8A68,0,0.48,0,chair);
@@ -368,7 +374,7 @@ const charTex=new THREE.TextureLoader().load(CHAR_IMG,()=>{$('loadmsg').style.di
 setTimeout(()=>{$('loadmsg').style.display='none';},2500);
 const charPlane=new THREE.Mesh(new THREE.PlaneGeometry(2.2,2.2),new THREE.MeshBasicMaterial({map:charTex}));
 charPlane.position.set(0,2.25,0.09);board.add(charPlane);
-const boardSign=textPlane('이명이 · 아명이',2.4,0.44,96,'#E87FA8','#5E2440',board);
+const boardSign=textPlane('이명이 · 아명이',2.5,0.5,110,'#E87FA8','#5E2440',board);
 boardSign.position.set(0,3.62,0.1);
 
 /* 화분들 */
@@ -423,7 +429,7 @@ crown.position.set(0,1.28,0);
 const easeIO=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
 let queue=[],cur=null;
 function seq(dur,fn,onEnd){queue.push({dur,fn,onEnd,t:0});}
-let camPos=new THREE.Vector3(-2,7,15),camLook=new THREE.Vector3(0,1.5,-2);
+let camPos=new THREE.Vector3(-1.5,4.6,10.5),camLook=new THREE.Vector3(0,1.7,-2);
 function setCam(px,py,pz,lx,ly,lz){camPos.set(px,py,pz);camLook.set(lx,ly,lz);}
 let hopT=-1,shakeT=-1,walkPhase=0,mode='idle',paradeA=0,camA=0;
 const GATE=new THREE.Vector3(-8,0,4.5);
@@ -446,7 +452,7 @@ function walkIn(then){
     if(p2.distanceTo(p)>0.001)pt.lookAt(p2.x,0,p2.z);
     walkPhase=t*22;
     if(t-lastStep>0.12){sfxStep();lastStep=t;}
-    camPos.set(p.x+3.6,2.8,p.z+5.4);camLook.set(p.x,1,p.z);
+    camPos.set(p.x+2.7,2.4,p.z+4.2);camLook.set(p.x,1.1,p.z);
   },()=>{sitDown(then);});
 }
 function sitDown(then){
@@ -458,7 +464,7 @@ function sitDown(then){
     armL.rotation.z=-0.5+e*(-0.3);armR.rotation.z=0.5+e*0.3;
   },()=>{
     mode='sit';
-    setCam(2,2.35,3.9,2,1.35,-2.2);
+    setCam(2,2.05,3.15,2,1.45,-2.1);
     then&&then();
   });
   function normAng(target){let d=target-fromR;while(d>Math.PI)d-=Math.PI*2;while(d<-Math.PI)d+=Math.PI*2;return fromR+d;}
@@ -509,12 +515,12 @@ function animate(){
       armL.rotation.z=-2.6+Math.sin(T*7)*0.35;
       armR.rotation.z=2.6-Math.sin(T*7+1)*0.35;
       camA+=dt*0.1;
-      camPos.set(Math.sin(camA)*10.5,4.6,Math.cos(camA)*10.5+1);
+      camPos.set(Math.sin(camA)*8.2,3.9,Math.cos(camA)*8.2+1);
       camLook.set(0,1.2,-0.5);
     } else {
       pt.position.set(0,0,2.5);pt.rotation.y=Math.PI;
       armL.rotation.z=-2.6;armR.rotation.z=2.6;
-      camPos.set(0,4.5,11);camLook.set(0,1.2,0);
+      camPos.set(0,3.6,8.5);camLook.set(0,1.2,0);
     }
   } else {
     /* idle 시작 화면 */
@@ -599,7 +605,7 @@ function resetToStart(){
   crown.visible=false;mode='idle';cur=null;queue=[];
   pt.position.copy(GATE);pt.rotation.set(0,Math.PI*0.35,0);
   armL.rotation.set(0,0,-0.5);armR.rotation.set(0,0,0.5);
-  setCam(-2,7,15,0,1.5,-2);
+  setCam(-1.5,4.6,10.5,0,1.7,-2);
   st.phase='start';snap();
   $('startcard').style.display='block';
   $('dots').style.display='none';$('tickets').style.display='none';
@@ -630,7 +636,7 @@ function boot(data){
     st={...st,...data};
     $('startcard').style.display='none';
     pt.position.set(2,0.42,0.6);pt.rotation.y=Math.PI;mode='sit';
-    setCam(2,2.35,3.9,2,1.35,-2.2);camera.position.copy(camPos);
+    setCam(2,2.05,3.15,2,1.45,-2.1);camera.position.copy(camPos);
     renderQ();
   }
   if(data&&typeof data.sound==='boolean'){st.sound=data.sound;
